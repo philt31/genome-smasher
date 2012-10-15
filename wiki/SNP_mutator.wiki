@@ -1,13 +1,14 @@
-#This script prepares SNPs and small indels to insert into the genome
+= SNP_mutator_v2.pl=
 
-= Introduction =
-
-Add your content here.
+SNP_mutator_v2.pl is a perl script that will generate a series of single nucleotide variations, as well as small insertions and deletions.
 
 
-= Details =
+= Usage =
+{{{
+usage: SNP_mutator.pl -f <Chr##.fa> [-omid]
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+}}}
+ * -o Output File. Default = snp_mutator_output.vcf
+ * -m Total number of Desired point Mutations
+ * -i Total number of Desired Insertions
+ * -d Total number of Desired Deletions
