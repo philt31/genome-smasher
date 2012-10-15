@@ -1,0 +1,28 @@
+= SV_generator.sh =
+
+SV_generator. sh is a useful shell script that calls several perl scripts that help to generate structural variations to insert into a synthetic genome.  
+
+= Usage =
+
+{{{
+Usage: SV_Generator.sh <SCRIPTS_DIR> <Genome_DIR> <OUTPUT_VCF> <NUM_BASES_FASTAFILE_EACHLINE>"
+}}}
+
+The inputs are defined below:
+
+ * SCRIPTS_DIR
+  * The scripts directory is the full path to a series of perl scripts that will generate different types of structural variations:
+   # Copy_number_changes.pl
+   # Inversions.pl
+   # Large_Deletions.pl
+   # Novel_insertions.pl
+   # Translocations.pl
+
+ * Genome_DIR
+  * The scripts directory is a directory that contains chromosome files for an individual reference genome assembly.  They must be stored by chromosome, beginning with "chr" and ending with ".fa".
+
+ * OUTPUT_VCF
+  * This is the name of the final vcf-like file to create
+
+ * NUM_BASES_FASTAFILE_EACHLINE
+  * some FAST files are 60 nucleotides long, whereas others are 50.  Make sure to select the corresponding length for your reference FASTA file inputs.
