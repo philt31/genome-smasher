@@ -12,3 +12,6 @@ usage: SNP_mutator.pl -f <Chr##.fa> [-omid]
  * -m Total number of Desired point Mutations
  * -i Total number of Desired Insertions
  * -d Total number of Desired Deletions
+
+== Special Notes ==
+If the nucleotide in the reference is "N", that poistion will be skipped and no mutation will not be made
