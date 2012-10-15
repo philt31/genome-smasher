@@ -26,3 +26,6 @@ The inputs are defined below:
 
  * NUM_BASES_FASTAFILE_EACHLINE
   * some FAST files are 60 nucleotides long, whereas others are 50.  Make sure to select the corresponding length for your reference FASTA file inputs.
+
+== Special Notes ==
+No mutations will be added if the nucleotide where the event is being inserted is "N".
