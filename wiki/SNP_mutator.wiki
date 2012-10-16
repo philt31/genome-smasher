@@ -1,6 +1,6 @@
 = SNP_mutator_v2.pl=
 
-SNP_mutator_v2.pl is a perl script that will generate a series of single nucleotide variations, as well as small insertions and deletions.
+SNP_mutator_v2.pl is a perl script that will generate a vcf file of positions of single nucleotide variations, as well as small insertions and deletions that can be used as input for GenomeSmasher.
 
 
 = Usage =
