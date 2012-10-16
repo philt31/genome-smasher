@@ -5,7 +5,7 @@ SNP_mutator_v2.pl is a perl script that will generate a vcf file of positions of
 
 = Usage =
 {{{
-usage: SNP_mutator.pl -f <Chr##.fa> [-omid]
+usage: SNP_mutator.pl -f <chr##.fa> [-omid]
 
 }}}
  * -o Output File. Default = snp_mutator_output.vcf
