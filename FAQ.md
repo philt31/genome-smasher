@@ -1,0 +1,14 @@
+# Introduction #
+
+**Q.**  I am trying to run the SV\_generator.sh but I'm only getting Novel insertions - no Large deletions, CNVs, inversions or translocations.
+
+**A.**  This script expects at least 19 different chromosome.fa files in the Genome\_DIR.  If you are only wanting to simulate variants on one or a few chromsosomes, just copy the part of the script your want
+#
+```
+perl $SCRIPTS_DIR/Large_Deletions.pl $CHROMOSOME $OUTPUT_VCF 20
+```
+
+
+**Q.**  When running SNP\_mutator\_v2.pl, how do I know how many variants to simulate?
+
+**A.**  You can choose whatever you want.  If one assumes the genome has 3M varaints on 23 chromosomes,  then you should simulate ~130k per chromosome.  Alternatively, you can just randomly subset variants from the dbSNP vcf file.  Just make sure to remove multi-allelic varints (i.e. those with a comma in the alt field).
